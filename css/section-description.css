@@ -1,0 +1,85 @@
+.description {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.section-description{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to right, #580579, #000000); 
+    position: relative;
+    overflow: hidden;
+}
+.container-description {
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: center; 
+    gap: 20px;
+    height: 100%; 
+    position: relative; 
+    padding: 10px; 
+}
+.description-section {
+    color: white;
+    z-index: 10;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-description{
+    background: rgba(196, 187, 187, 0.068);
+    border-radius: 5px;
+    box-shadow:0 2px px rgba(0, 0, 0, 0.247); /* Añade la sombra */ ;
+    text-align: center; 
+
+}
+.text-description h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+.text-description p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.image-description {
+    height: 270px; 
+    width: auto; 
+    display: block; /* Asegura que la imagen no tenga espacio debajo */
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.719) 0%, rgba(0, 0, 0, 0) 100%);
+    mask-size: 100% 100%;
+}
+
+.icons-description{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    padding: 35px;
+}
+.icons-description a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+}
+.icon-linkedin{
+    background-color: #8308b4;
+}
+.icon-linkedin:hover{
+    background-color: rgba(174, 37, 228, 0.89);
+    border: 1px solid #999494; 
+}
+
+.icon-cv{
+    background: none;
+    border: 1px solid #e7dede; 
+}
+.icon-cv:hover{
+    background-color: #3c393d;
+    border: none;
+}
