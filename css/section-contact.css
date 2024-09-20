@@ -1,3 +1,120 @@
 .section-contact{
+    background-color: #f5e9fad7;
+    
+}
+.section-contact h2{
     text-align: center;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #444343;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+/* Centramos el contenedor del formulario */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* Estilos para la lista del formulario */
+.form-container ul {
+    list-style-type: none; /* Eliminamos las viñetas */
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* Colocamos los campos en columnas con inputs centrados */
+.form-container li {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 20px;
+}
+
+/* Estilos para las etiquetas (al margen izquierdo) */
+.form-container label {
+    align-self: flex-start; /* Alinea los labels al margen izquierdo */
+    margin-bottom: 5px;
+    font-weight: normal; /* Texto menos pesado */
+    font-size: 1rem;
+    color: #666; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent; 
+    padding: 15px 0; /* Incrementamos el padding */
+    font-size: 1rem; /* Aumentamos el tamaño de fuente */
+    color: #333; 
+    transition: border-color 0.3s;
+    width: 100%; /* Se asegura que los inputs usen el espacio disponible */
+    max-width: 1000px;
+
+}
+
+
+/* Cambia el borde inferior cuando el input está en foco */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-bottom: 1px solid #a138ca; /* Verde cuando está enfocado */
+    outline: none; /* Elimina el borde por defecto */
+}
+
+/* Estilo minimalista para el textarea */
+textarea {
+    height: 100px;
+    resize: vertical; /* Permitir redimensionado vertical */
+}
+
+/* Estilo para el botón de envío */
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+    text-align: center; 
+}
+
+input[type="submit"]:hover {
+    background-color: #555; 
+}
+
+/* Media Query para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        max-width: 100%; /* En móviles, ocupa el 100% del ancho */
+        padding: 15px; /* Aumentamos el padding para hacerlos más grandes */
+        font-size: 1rem; /* Puedes ajustar el tamaño de fuente si lo deseas */
+    }
+
+    /* Ajustamos el contenedor del formulario */
+    .form-container {
+        padding: 20px; /* Agregamos padding para mejor visibilidad en móviles */
+    }
+    
+    /* Ajustamos el ancho del formulario */
+    .form-container ul {
+        width: 100%; /* El formulario ocupa el 100% del ancho */
+    }
+    
+    /* Alineamos el botón de envío */
+    input[type="submit"] {
+        width: 100%; /* El botón ocupa todo el ancho */
+        max-width: 100%; /* Evitamos que se limite el tamaño */
+    }
 }

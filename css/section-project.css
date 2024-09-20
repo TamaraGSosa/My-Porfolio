@@ -1,10 +1,10 @@
 .section-projects {
     background-color: #f4f4f4;
+    
+    padding-bottom: 40px;
 }
-
 .content-project {
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .consola-img {
