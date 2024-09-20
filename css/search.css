@@ -1,0 +1,37 @@
+.container-skills{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(105, 25, 179, 0.932);
+    margin-bottom: 10px;
+    padding: 10px;
+    
+}
+/* Estilos generales para el contenedor de habilidades */
+.skill-item {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 10px;
+    width: 70px;
+}
+
+/* Estilo del checkbox */
+.skill-item input[type="checkbox"] {
+    margin-bottom: 5px; /* Espacio entre el checkbox y el ícono */
+}
+
+/* Estilo del ícono */
+.skill-item i {
+    font-size: 40px; /* Tamaño del ícono */
+}
+.label-item{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    color: #eeeded; /* Color del ícono (puedes ajustar según tu preferencia) */
+}
+.img-skills-typescript{
+    width: 35px;;
+    left: auto;
+}

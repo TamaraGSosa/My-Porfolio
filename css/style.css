@@ -4,8 +4,9 @@
 @import url('section-project.css');
 @import url('section-contact.css');
 @import url('section-description.css');
+@import url('search.css');
 body{
     margin: 0;
-    padding: 0px 20px;
+    
     
 }

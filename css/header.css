@@ -5,12 +5,11 @@ header{
     height: 50px;
 }
 nav{
-   padding: 5px;
+    padding: 5px;
 }
     
 .nav-content{
     display: flex;
- 
 }
 .nav-conteiner{
     display: flex;
@@ -27,8 +26,9 @@ nav{
 }
 .nav-logo p {
     font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
+    font-weight: 600;
+    font-style: italic;
+    color: rgb(170, 170, 170);
 }
 .nav-list{
     display: flex;
@@ -50,12 +50,8 @@ nav{
     border-radius: 3px ;
     background: none;
     border: 2px solid ;
-    
-
     cursor: pointer;
-  
     border-color: rgb(252, 252, 252);
-  
 }
 .button-theme:hover{
     background-color: rgb(7, 107, 194);
