@@ -1,10 +1,11 @@
 .container-skills{
     display: flex;
     justify-content: center;
-    background-color: rgba(105, 25, 179, 0.932);
+    background-color: rgb(143, 9, 221);
     margin-bottom: 10px;
     padding: 10px;
-    
+    font-family: "Poppins",sans-serif;
+   
 }
 /* Estilos generales para el contenedor de habilidades */
 .skill-item {
@@ -13,6 +14,12 @@
     align-items: center;
     margin: 10px;
     width: 70px;
+}
+.skills-card{
+    font-family: "Poppins",sans-serif;
+    font-size: 100;
+    color: #666;
+   
 }
 
 /* Estilo del checkbox */
@@ -27,7 +34,6 @@
 .label-item{
     display: flex;
     flex-direction: column;
-    
     align-items: center;
     color: #eeeded; /* Color del ícono (puedes ajustar según tu preferencia) */
 }

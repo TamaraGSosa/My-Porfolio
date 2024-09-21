@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img src="${data.image}" alt="Card Image">
                 </div>
                 <hr>
-                <span>${data.title}</span>
+                <span class='span-title'>${data.title}</span>
                 <br>
-                <span>${data.description}</span>
+                <span class='span-description'>${data.description}</span>
                 <div class="skills-card">
                     ${data.skills.map(skill => `<span>${skill}</span>`).join('')}
                 </div>

@@ -41,9 +41,12 @@ footer a:hover {
 /* Estilos para el texto del footer */
 footer span {
     margin-top: 15px; /* Espacio entre los íconos y el texto */
-    font-size: 1rem; /* Tamaño de la fuente */
     display: flex;
-    align-items: center; /* Centra el texto verticalmente con el ícono */
+    align-items: center; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+
 }
 
 /* Estilo para el ícono dentro del span */
