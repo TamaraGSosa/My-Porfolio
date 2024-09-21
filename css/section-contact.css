@@ -1,23 +1,52 @@
 .section-contact{
     background-color: #f5e9fad7;
+    text-align: center;
     
 }
-.section-contact h2{
+.section-contact h2 {
     text-align: center;
     padding: 20px;
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    color: #444343;
-    margin-bottom: 0%;
-    margin-top: 0%;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+    background: linear-gradient(
+        to right, /* Cambia la dirección a derecha */
+        #4b4b4b,
+        #6b08ddd0,
+        #9d1fd8,
+        #c300ff,
+        #4b4b4b
+    );
+    display: inline-block; /* Permite que el <h2> se ajuste al contenido */
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move 3s linear alternate infinite; /* Cambia a cubic-bezier */
+    font-size: 25px;
+    text-transform: uppercase;
+    
 }
+
+@keyframes move {
+    0% {
+        background-position: 0;
+    }
+    50% {
+        background-position: 180px; /* Movimiento sutil */
+    }
+    100% {
+        background-position: 440px;
+    }
+}
+
+
 
 /* Centramos el contenedor del formulario */
 .form-container {
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 
 /* Estilos para la lista del formulario */
@@ -42,6 +71,8 @@
     font-weight: normal; /* Texto menos pesado */
     font-size: 1rem;
     color: #666; 
+    font-family:"Poppins", sans-serif;
+    font-weight: 400;
 }
 
 input[type="text"],
@@ -51,11 +82,12 @@ textarea {
     border-bottom: 1px solid #ccc;
     background-color: transparent; 
     padding: 15px 0; /* Incrementamos el padding */
-    font-size: 1rem; /* Aumentamos el tamaño de fuente */
     color: #333; 
     transition: border-color 0.3s;
     width: 100%; /* Se asegura que los inputs usen el espacio disponible */
     max-width: 1000px;
+    font-family:"Poppins", sans-serif;
+    font-weight: 200;
 
 }
 
