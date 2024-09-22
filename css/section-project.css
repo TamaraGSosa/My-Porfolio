@@ -36,7 +36,7 @@
 
 .img-card img {
     width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 4px;
 }
 
@@ -81,4 +81,20 @@
     
     
     
+}
+.icon-skills{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    
+}
+.icon-skills a {
+    font-size: 20px; 
+    margin: 0 10px; 
+    text-decoration: none;
+    color: inherit; /* Hereda el color del texto */
+    transition: transform 0.2s; /* Transición para efecto de hover */
+}
+.icon-skills a:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el cursor */
 }

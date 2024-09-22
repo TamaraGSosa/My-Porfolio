@@ -19,6 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="skills-card">
                     ${data.skills.map(skill => `<span>${skill}</span>`).join('')}
                 </div>
+                <div class='icon-skills'>
+                    <a href="#" target="_blank" title="Figma">
+                        <i class="fa-brands fa-figma"></i>
+                    </a>
+                    <a href="#" target="_blank" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
             </div>
         `;
 
