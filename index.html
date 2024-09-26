@@ -22,21 +22,26 @@
                     <img src="./assets/LOGO TMRA.png" alt="logo-png" class="logo">
                     <p>TMRA</p>
                 </div>
-                <div class="nav-content">
-                    <ul class="nav-list" >
+                <div class="nav-content" id="nav-content">
+                    <ul class="nav-list panel" >
                         <li>
-                            <a href="#Sobremi" target="_blank" >Proyectos</a>
+                            <a class="menu-link" href="#proyectos" >Proyectos</a>
+                        </li>
                         <li>
-                            <a href="#Sobremi" target="_blank">Contacto</a>
+                            <a class="menu-link"  href="#contacto" >Contacto</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-xmark close-icon" style="display:none; cursor: pointer;"></i> 
+                    
                         </li>
                         
                     </ul>
-                    <!-- <button class="button-theme">Theme claro</button> -->
-                
                 </div>
                 
-                
-            </div>
+                <div class="menu-mobile" id="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
         </nav>
     </header>
     <main>
@@ -58,7 +63,7 @@
             </div>
         </section>
         </section>
-        <section class="section-projects">
+        <section class="section-projects" id="proyectos">
             <div class="content-project">
                 <img src="./assets/pngwing.com (1).png" alt="consola-logo" class="consola-img">
                 <div id="container-skills" class="container-skills"></div>
@@ -66,7 +71,7 @@
             </div>
             <div id="cardsContainer" class="container-cards">
         </section>
-        <section class="section-contact">
+        <section class="section-contact" id="contacto">
             <h2>No dudes en consultarme </h2>
             <div class="form-container">
                 <form action="" method="post">
@@ -92,7 +97,6 @@
             
         </section >
         <footer>
-         
             <ul>
                 <li>
                     <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>

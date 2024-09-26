@@ -1,59 +1,102 @@
 header{
     background: linear-gradient(to right, #580579, #000000); 
+    padding: 0px 20px;
+   
 }
 .logo{
-    height: 50px;
+    width: 80px;
 }
-nav{
-    padding: 5px;
-}
-    
-.nav-content{
-    display: flex;
-}
-.nav-conteiner{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    
-    justify-content: space-between;
-    
-}
-
 .nav-logo{
     display: flex;
     align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
 }
 .nav-logo p {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
+    font-size: 15px;
     font-style: italic;
-    color: rgb(170, 170, 170);
+    color: #dbdbdb;
+}
+.nav-conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-content{
+    display: flex;
+    align-items: center;
+   
+    
+}
+.nav-conteiner i{
+    display: none;
 }
 .nav-list{
     display: flex;
+    justify-content: space-around;
+    gap: 20px;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
-.nav-list li {
-    margin:  0 30px ;
-}
-.nav-list a{
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
+.nav-list li a {
+    color: white;
     text-decoration: none;
-    color: rgb(187, 185, 185);
-    font-size: 14px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
 }
-.button-theme{
-    border-radius: 3px ;
-    background: none;
-    border: 2px solid ;
+.menu-mobile {
+    display: none; /* Oculta el ícono de menú en pantallas grandes */
+    color: white;
+    font-size: 24px;
     cursor: pointer;
-    border-color: rgb(252, 252, 252);
+    
 }
-.button-theme:hover{
-    background-color: rgb(7, 107, 194);
-    color: beige;
+.close-icon {
+    font-size: 24px; 
+    position: absolute; /* Para colocar el ícono en una posición específica */
+    top: 25px; 
+    right: 25px;
+}
+
+@media (max-width: 768px) {
+    .menu-mobile{
+        display: block;
+    }
+    .nav-conteiner{
+       
+    }
+
+    .nav-content{
+    flex-direction: column;
+   
+    }
+    .panel{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    background-color: rgba(127, 0, 231, 0.562);
+    height: 100dvh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 0;
+    z-index: 10002;
+    transform: translateX(790px);
+   
+    }
+    .panel.isactive{
+        transform: translateX(0); 
+        transition: .4s ease-in-out;
+        backdrop-filter: blur(7px);
+    }
+    .nav-conteiner i {
+    display: block;
+    color: aliceblue;
+    font-size: 30px;
+ }
+
 }

@@ -94,6 +94,16 @@
     }
 
 }
+@media (max-width: 1900px) {
+    .image-description{
+        display: none
+    }
+    .description-section {
+
+        max-width: 90%;
+    }
+
+}
 .icons-description{
     display: flex;
     gap: 20px;
