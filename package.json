@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "sass": "sass sass/style.scss css/style.css",
+    "sass": "sass sass/style.scss css/style.css --style compressed",
     "sass:watch": "sass --watch sass/style.scss css/style.css"
   },
   "devDependencies": {

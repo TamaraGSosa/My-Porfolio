@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const cardHTML = `
             <div class="container-card">
                 <div class="img-card">
-                    <img src="${data.image}" alt="Card Image">
+                    <img src="${data.image}" alt="Imagen del proyecto ${data.title}" loading="lazy">
                 </div>
                 <hr>
                 <span class='span-title'>${data.title}</span>

@@ -37,8 +37,9 @@ export const createCheckbox = () => {
             const image = document.createElement('img');
             image.className = 'img-skills-typescript';
             image.src = skill.image2;
+            image.alt = 'Icono de TypeScript';
             label.appendChild(image);
-            
+
         }
 
         const text = document.createTextNode(` ${skill.name}`);
@@ -91,7 +92,7 @@ const filterCards = (selectedSkills) => {
         const cardHTML = `
             <div class="container-card">
                 <div class="img-card">
-                    <img src="${data.image}" alt="Card Image">
+                    <img src="${data.image}" alt="Imagen del proyecto ${data.title}" loading="lazy">
                 </div>
                 <hr>
                 <span>${data.title}</span>
