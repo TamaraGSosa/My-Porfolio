@@ -5,11 +5,11 @@ import cardData from './data-card.js'; // Ajusta la ruta si es necesario
 const containerSkills = document.getElementById('container-skills');
 
 const skills = [
-    { id: 'html', name: 'HTML', image: 'fa-brands fa-html5' },
-    { id: 'css', name: 'CSS', image: 'fa-brands fa-css3-alt' },
-    { id: 'javascript', name: 'JavaScript', image: 'fa-brands fa-js' },
-    { id: 'vue', name: 'Vue', image: 'fa-brands fa-vuejs' },
-    {id:'typescrip',name:'TypeScript',image2:'assets/type-script.png'}
+    { id: 'html', name: 'HTML', image: 'fa-brands fa-html5', alt: 'Icono de HTML' },
+    { id: 'css', name: 'CSS', image: 'fa-brands fa-css3-alt', alt: 'Icono de CSS' },
+    { id: 'javascript', name: 'JavaScript', image: 'fa-brands fa-js', alt: 'Icono de JavaScript' },
+    { id: 'vue', name: 'Vue', image: 'fa-brands fa-vuejs', alt: 'Icono de Vue' },
+    {id:'typescrip',name:'TypeScript',image2:'assets/type-script.png', alt: 'Icono de TypeScript'}
 ];
 
 export const createCheckbox = () => {
@@ -30,8 +30,9 @@ export const createCheckbox = () => {
         if (skill.image) { // Si tiene un icono
             const icon = document.createElement('i');
             icon.className = skill.image;
+            icon.setAttribute('aria-label', skill.alt);
             label.appendChild(icon);
-        } 
+        }
         
         if (skill.image2) { // Si tiene una imagen
             const image = document.createElement('img');
