@@ -1,0 +1,23 @@
+# Node
+node_modules/
+
+# Sass cache (a veces aparece)
+.sass-cache/
+
+# CSS compilado (opcional pero recomendado)
+css/style.css
+css/style.css.map
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs y editores
+.vscode/
+.idea/
+*.swp
