@@ -585,4 +585,9 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+*:focus {
+  outline: 2px solid #a138ca;
+  outline-offset: 2px;
+}
+
 /*# sourceMappingURL=style.css.map */

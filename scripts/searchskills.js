@@ -38,6 +38,7 @@ export const createCheckbox = () => {
             image.className = 'img-skills-typescript';
             image.src = skill.image2;
             label.appendChild(image);
+            
         }
 
         const text = document.createTextNode(` ${skill.name}`);

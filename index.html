@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,10 +32,10 @@
         <nav>
             <div class="nav-conteiner">
                 <div class="nav-logo">
-                    <img src="./assets/LOGO TMRA.png" alt="logo-png" class="logo">
+                    <img src="./assets/LOGO TMRA.png" alt="Logo de TMRA" class="logo">
                     <p>TMRA</p>
                 </div>
-                <div class="nav-content" id="nav-content">
+                <div class="nav-content" id="nav-content" role="navigation">
                     <ul class="nav-list panel" >
                         <li>
                             <a class="menu-link" href="#proyectos" >Proyectos</a>
@@ -45,13 +45,12 @@
                         </li>
                         <li>
                             <i class="fa-solid fa-xmark close-icon" style="display:none; cursor: pointer;"></i> 
-                    
                         </li>
                         
                     </ul>
                 </div>
                 
-                <div class="menu-mobile" id="mobile-menu">
+                <div class="menu-mobile" id="mobile-menu" role="button" tabindex="0" aria-expanded="false" aria-controls="nav-content" aria-label="Abrir menú de navegación">
                     <i class="fa-solid fa-bars"></i>
                 </div>
 
@@ -61,16 +60,16 @@
         <section class="description">
             <div class="section-description">
                 <div class="container-description">
-                    <img src="./assets/silueta.png" alt="img-description" class="image-description">
+                    <img src="./assets/silueta.png" alt="Silueta de persona" class="image-description">
                     <div class="description-section">
                         <div class="text-description">
-                            <h1>Desarrolladora Front End</h1>
+                            <h1>Desarrolladora de Software</h1>
                             <p>¡Hola! Soy Gabriela Sosa, estudiante de la carrera de Analista de Sistemas y entusiasmada por aprender cosas nuevas y me encantan los desafíos.</p>
                             <p>Si quieres saber más sobre mí y mis proyectos, ¡no dudes en explorar mi portafolio!</p>
                         </div>
                         <div class="icons-description">
-                            <a class="icon-linkedin" href="http://" target="_blank"><i class="fa-brands fa-linkedin"></i> <span>Linkedin</span></a>
-                                <a class="icon-cv"  target="_blank"><span>Currículum</span></a> 
+                            <a class="icon-linkedin" href="https://www.linkedin.com/in/gabriela-tamara-sosa" target="_blank"><i class="fa-brands fa-linkedin"></i> <span>Linkedin</span></a>
+                            <a class="icon-cv"  target="_blank"><span>Currículum</span></a> 
                         </div>
                     </div>
             </div>
@@ -78,7 +77,7 @@
         </section>
         <section class="section-projects" id="proyectos">
             <div class="content-project">
-                <img src="./assets/pngwing.com (1).png" alt="consola-logo" class="consola-img">
+                <img src="./assets/pngwing.com (1).png" alt="Icono de consola de videojuegos" class="consola-img">
                 <div id="container-skills" class="container-skills"></div>
                 <h2>Proyectos</h2>
             </div>
@@ -112,10 +111,10 @@
         <footer>
             <ul>
                 <li>
-                    <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                 </li>
                 <li>
-                    <a href="#" target="_blank"> <i class="fa-brands fa-github"></i></a>
+                    <a href="#" target="_blank" aria-label="GitHub"> <i class="fa-brands fa-github"></i></a>
                 </li>
             </ul>
             <span>By Tamara Sosa <i class="fa-solid fa-gamepad"></i></span>
