@@ -30,7 +30,6 @@ export const createCheckbox = () => {
         if (skill.image) { // Si tiene un icono
             const icon = document.createElement('i');
             icon.className = skill.image;
-            icon.setAttribute('aria-label', skill.alt);
             label.appendChild(icon);
         }
         
